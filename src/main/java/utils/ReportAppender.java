@@ -9,6 +9,7 @@ import org.apache.logging.log4j.core.config.plugins.Plugin;
 import org.apache.logging.log4j.core.config.plugins.PluginAttribute;
 import org.apache.logging.log4j.core.config.plugins.PluginElement;
 import org.apache.logging.log4j.core.config.plugins.PluginFactory;
+import org.testng.Reporter;
 
 import java.time.Instant;
 import java.util.concurrent.ConcurrentHashMap;
@@ -36,6 +37,7 @@ public class ReportAppender extends AbstractAppender {
 
     @Override
     public void append(LogEvent event) {
-        eventMap.put(Instant.now().toString(), event);
+//        eventMap.put(Instant.now().toString(), event);
+       Reporter.log(event.getMessage().toString());
     }
 }
