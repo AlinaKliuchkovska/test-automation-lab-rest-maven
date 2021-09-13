@@ -42,7 +42,7 @@
                         </property>
                         <property>
                             <name>listener</name>
-                            <value>org.uncommons.reportng.HTMLReporter,com.framework.testng.SuiteListener</value>
+                            <value>org.uncommons.reportng.HTMLReporter,utils.TestNGListener</value>
                         </property>
                     </properties>
                     <reportsDirectory>test-output</reportsDirectory>
