@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="rest.TestRest">
+    <test name="Passed" >
+        <classes>
+            <class name="rest.TestRest"/>
+        </classes>
+    </test>
+
+    <test name="Failed">
+        <classes>
+            <class name="rest.TestRest"/>
+        </classes>
+    </test>
+</suite>
