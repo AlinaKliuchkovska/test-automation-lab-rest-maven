@@ -1,11 +1,12 @@
 package utils;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 
 public class TestNGListener implements ITestListener {
-    private static final Logger LOG = Logger.getLogger(TestNGListener.class);
+    private static final Logger LOG = LogManager.getLogger(TestNGListener.class);
 
     public void onFinish(ITestContext result) {
         LOG.info("Test suite finished: " + result.getEndDate());
@@ -17,7 +18,6 @@ public class TestNGListener implements ITestListener {
 
     public void onTestFailure(ITestContext result) {
         LOG.error("Test failed: " + result.getName());
-
     }
 
     public void onTestSkipped(ITestContext result) {
