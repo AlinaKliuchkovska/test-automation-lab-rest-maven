@@ -31,20 +31,20 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
-                    <systemPropertyVariables>
-<!--                        <workingDirectory>target/surefire-reports/html</workingDirectory>-->
-                        <org.uncomons.reportng.escape-output>false</org.uncomons.reportng.escape-output>
-                    </systemPropertyVariables>
-                    <properties>
-                        <property>
-                            <name>usedefaultlisteners</name>
-                            <value>false</value>
-                        </property>
-                        <property>
-                            <name>listener</name>
-                            <value>org.uncommons.reportng.HTMLReporter,utils.TestNGListener</value>
-                        </property>
-                    </properties>
+<!--                    <systemPropertyVariables>-->
+<!--&lt;!&ndash;                        <workingDirectory>target/surefire-reports/html</workingDirectory>&ndash;&gt;-->
+<!--                        <org.uncomons.reportng.escape-output>false</org.uncomons.reportng.escape-output>-->
+<!--                    </systemPropertyVariables>-->
+<!--                    <properties>-->
+<!--                        <property>-->
+<!--                            <name>usedefaultlisteners</name>-->
+<!--                            <value>false</value>-->
+<!--                        </property>-->
+<!--                        <property>-->
+<!--                            <name>listener</name>-->
+<!--                            <value>org.uncommons.reportng.HTMLReporter,utils.TestNGListener</value>-->
+<!--                        </property>-->
+<!--                    </properties>-->
                     <reportsDirectory>test-output</reportsDirectory>
                 </configuration>
                 <dependencies>
